@@ -18,7 +18,7 @@ done
 
 mkdir ../module/lib
 
-for abi in armeabi armeabi-v7a; 
+for abi in armeabi armeabi-v7a arm64-v8a; 
 do
 	ndk-build NDK_DEBUG=1 APP_ABI=$abi
 	ndk-build NDK_DEBUG=0 APP_ABI=$abi
